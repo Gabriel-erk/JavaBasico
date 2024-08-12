@@ -1,3 +1,4 @@
+package edu.gabriel.segundasemana;
 /*
 * todo arquivo/classe java tem que estar dentro da pasta src (toda classe java que representa alguma infomração deverá ter letra maiuscula, se for composta a segundapalvara deve também ser maiuscula, classe deve ter o mesmo nome do arquivo, ex, aqui a minha primeira classe é "MinhaClasse" o mesmo nome do arquivo)
 *  arquivos criados em java terão que ter inicio em letra maiuscula e a palavra complementar também (Minha e palavra complementar Classe) (cada inicial tem que se maiuscula)
