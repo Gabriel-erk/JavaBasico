@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TesteVisibilidade",
+            "request": "launch",
+            "mainClass": "TesteVisibilidade",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
+            "name": "FormatadorCep",
+            "request": "launch",
+            "mainClass": "FormatadorCep",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
+            "name": "Sobremim",
+            "request": "launch",
+            "mainClass": "Sobremim",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "ClasseScanner",
             "request": "launch",
             "mainClass": "ClasseScanner",
