@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Contador",
+            "request": "launch",
+            "mainClass": "Contador",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
+            "name": "ProcessoSeletivo",
+            "request": "launch",
+            "mainClass": "ProcessoSeletivo",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "TesteVisibilidade",
             "request": "launch",
             "mainClass": "TesteVisibilidade",
