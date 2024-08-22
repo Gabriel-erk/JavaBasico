@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ContratacaoComboCompleto",
+            "request": "launch",
+            "mainClass": "ContratacaoComboCompleto",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
+            "name": "VerificacaoServico",
+            "request": "launch",
+            "mainClass": "VerificacaoServico",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "DesafioPrimeirosIf",
             "request": "launch",
             "mainClass": "DesafioPrimeirosIf",
