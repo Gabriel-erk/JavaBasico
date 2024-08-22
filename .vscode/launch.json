@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DesafioPrimeirosIf",
+            "request": "launch",
+            "mainClass": "DesafioPrimeirosIf",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
+            "name": "DesafioContador",
+            "request": "launch",
+            "mainClass": "DesafioContador",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
+            "name": "Marcelo",
+            "request": "launch",
+            "mainClass": "Marcelo",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "Contador",
             "request": "launch",
             "mainClass": "Contador",
