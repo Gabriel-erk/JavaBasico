@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Escola",
+            "request": "launch",
+            "mainClass": "escola.Escola",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "ContratacaoComboCompleto",
             "request": "launch",
             "mainClass": "ContratacaoComboCompleto",
