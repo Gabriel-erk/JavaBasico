@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Autodromo",
+            "request": "launch",
+            "mainClass": "edu.gabriel.exemploPoo.Autodromo",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "SistemaIbge",
             "request": "launch",
             "mainClass": "edu1.gabriel.sistemaIbge.SistemaIbge",
