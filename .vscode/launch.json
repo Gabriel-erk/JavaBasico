@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ComputadorDaMin",
+            "request": "launch",
+            "mainClass": "edu.gabriel.exemploEncapsulamento.ComputadorDaMin",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "Autodromo",
             "request": "launch",
             "mainClass": "edu.gabriel.exemploPoo.Autodromo",
