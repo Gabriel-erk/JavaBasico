@@ -1,5 +1,7 @@
 package edu.gabriel.exemploEncapsulamento;
 
+import java.util.Scanner;
+
 import edu.gabriel.exemploEncapsulamento.app.Facebook;
 import edu.gabriel.exemploEncapsulamento.app.MSNMessenger;
 import edu.gabriel.exemploEncapsulamento.app.ServicoMsgInstantanea;
@@ -7,20 +9,27 @@ import edu.gabriel.exemploEncapsulamento.app.Telegram;
 
 public class ComputadorDaMin {
     public static void main(String[] args) {
-        // MSNMessenger msn = new MSNMessenger();
+        /*
+         * criando uma váriavel do tipo Scanner aqui, e passando para o construtor das classes
+         * já que esse é um comando presente em toda a aplicação, porque não aplicar os conceitoss de polimorfismo neles?
+         * ao usar sc.close em cada classe, ele fechava a entrada de dados de TODO o sistema, então, fazendo assim, além de ser reutilizável, eu evito esse problema, já que, ao chamar msn, executar e fechar o scanner, eu não conseguia "abrir" ele de novo, e me gerava um erro, reutilizando o scanner para todo o sistema, evito um fechamento prematuro do fluxo de entrada
+         */
+        Scanner sc = new Scanner(System.in);
 
-        // msn.enviarMensagem();
-        // msn.recebendoMensagem();
+        MSNMessenger msn = new MSNMessenger(sc);
 
-        // Facebook fcb = new Facebook();
+        msn.enviarMensagem();
+        msn.recebendoMensagem();
 
-        // fcb.enviarMensagem();
-        // fcb.recebendoMensagem();
+        Facebook fcb = new Facebook(sc);
 
-        // Telegram tlg = new Telegram();
+        fcb.enviarMensagem();
+        fcb.recebendoMensagem();
 
-        // tlg.enviarMensagem();
-        // tlg.recebendoMensagem();
+        Telegram tlg = new Telegram(sc);
+
+        tlg.enviarMensagem();
+        tlg.recebendoMensagem();
 
         /* POLIMORFISMO */
 
@@ -32,14 +41,18 @@ public class ComputadorDaMin {
         String appEscolhido =
         "fcb";
         if (appEscolhido.equals("msn")) {
-            smi = new MSNMessenger();
+            smi = new MSNMessenger(sc);
         } else if (appEscolhido.equals("fcb")) {
-            smi = new Facebook();
+            smi = new Facebook(sc);
         } else if (appEscolhido.equals("tlg")) {
-            smi = new Telegram();
+            smi = new Telegram(sc);
         }
         smi.enviarMensagem();
         smi.recebendoMensagem();
 
+        /*
+         * utilizo o close aqui, pois é somente neste ponto que quero encerrar o meu Scanner, é somente aqui que quero fechar o Scanner do sistema inteiro (somente quando o sistema inteiro tiver sido executado, por isso, coloco aqui, na minha classe "executável", e não fecho o Scanner do sistema sempre q executo uma classe filha de Servico)
+         */
+        sc.close();
     }
 }
