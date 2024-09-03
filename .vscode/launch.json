@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FoneDaMin",
+            "request": "launch",
+            "mainClass": "edu.gabriel.pooPessoal.FoneDaMin",
+            "projectName": "JavaBasico_78f438ae"
+        },
+        {
+            "type": "java",
             "name": "ComputadorDaMin",
             "request": "launch",
             "mainClass": "edu.gabriel.exemploEncapsulamento.ComputadorDaMin",
